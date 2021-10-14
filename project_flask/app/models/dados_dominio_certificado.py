@@ -1,7 +1,6 @@
 import pyodbc
 import datetime
 
-
 class GEMPRE_CERTIFICADOS:
     banco = pyodbc.connect('DSN=Contabil')
     cursor = banco.cursor()

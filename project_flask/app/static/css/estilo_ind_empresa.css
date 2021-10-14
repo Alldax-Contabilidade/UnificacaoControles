@@ -8,30 +8,57 @@
 input[type="checkbox"]:checked ~ .pagina-ind-empresa{
     transform: translateX(130px);
 }
+.legend-info{
+    font-weight: bold;
+}
 .titulo-emp{
-    /*background-color: blue;*/
+    /* background-color: blue; */
     padding: 50px;
 }
 .informacao-empresa{
-    background-color: #f2f2f2;
-    height: 700px;
-    margin: 40px
+    background-color: #fdfdfd;
+    width: 1000px;
+    height: 1000px;
+    margin: 40px;
 }
 .info-block-one{
-    /*background-color: red;*/
-    width: 100%;
-    height: 200px;
+    background-color: red;
+    display:table;
+    border-style:solid;
+    border-color: #725700;
+    width: 50%;
+    height: 100px;
+    
 }
+.info-emp-pag-one{
+    display:table;
+    width: 100%;
+    height: 100px;
+
+}
+/* {font-size: 20px;
+    border-radius: 10px;
+    display: table-cell;
+    border-style: solid;
+    border-color: #725700;
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 9%;
+    height: 50%;} */
 .info-emp-pag{
-    display: inline-block;
+    display: inline;
     border-right: red;
-    border-style: double;
-    margin-top: 50px;
+    border-style: solid ;
     margin-left: 90px;
     width: 260px;
     height: 80px;
 }
+p{
+    font-weight: bold;
+}
 .legend-info{
+
+    display: initial;
     font-size: 16px;
     color: gray;
 }
@@ -43,28 +70,39 @@ input[type="checkbox"]:checked ~ .pagina-ind-empresa{
     height: 200px;
 }
 .info-block-two{
+    display: inline;
     width: 100%;
     height: 250px;
 }
 .info-emp-pag-two{
     display: inline-block;
     border-right: red;
-    border-style: double;
+    border-style: solid;
     margin-top: 50px;
     margin-left: 50px;
     width: 538px;
     height: 150px;
 }
 .info-block-tree{
-    width: 100%;
-    height: 250px;
+    /* background-color: lawngreen; */
+    display: inline;
+    width: 90%;
+    height: 100px;
 }
 .info-emp-pag-tree{
-    display: inline-block;
-    border-right: red;
-    border-style: double;
-    margin-top: 50px;
-    margin-left: 90px;
-    width: 574px;
-    height: 80px;
+    display: inline;
+    width: 100%;
+    height: 100px;
+}
+.text-info-emp-tree{
+    font-size: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+    display: table-cell;
+    border-style: solid;
+    border-color: #725700;
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 9%;
+    height: 50%;
 }

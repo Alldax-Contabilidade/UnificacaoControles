@@ -6,8 +6,18 @@
         <h3 id="header-emp">{{ cod_emp }} | {{ nome_emp}} | {{ cnpj_emp }}</h3><hr>
     </div>
     <div class="informacao-empresa">
+        <div class="info-block-tree">
+            <fieldset class="info-emp-pag-tree" id="Responsaveis">
+                <legend class="legend-info">
+                    Responsaveis
+                </legend>
+                <span class="text-info-emp-tree" id="Responsaval Contabil"> Contabil: <p>bruno fellip{{ pessoa_contabil }}</p></span>
+                <span class="text-info-emp-tree" id="Responsaval Fiscal"> Fiscal: <p>bruno fellip{{ pessoa_fiscal }}</p></span>
+                <span class="text-info-emp-tree" id="Responsaval Pessoal"> Pessoal:  <p>bruno fellip{{ pessoa_pessoal }}</p></span>
+            </fieldset>
+        </div>
         <div class="info-block-one">
-            <fieldset class="info-emp-pag">
+            <fieldset class="info-emp-pag-one">
                 <legend class="legend-info">
                     Situação
                 </legend>
@@ -25,6 +35,8 @@
                 </legend>
                 <span class="text-info-emp" id="text-data-entrada">{{ ini_date }}</span>
             </fieldset>
+        </div>
+         <!--<div class="info-block-two">
             <fieldset class="info-emp-pag" id="data-saida">
                 <legend class="legend-info">
                     Data Saída
@@ -39,7 +51,7 @@
                 <span class="text-info-emp" id="regime-tributario">{{ regi_trib }}</span>
             </fieldset>
         </div>
-        <div class="info-block-two">
+        <div class="info-block-four">
             <fieldset class="info-emp-pag-two">
                 <legend class="legend-info">
                     Ramo Atividade
@@ -47,8 +59,8 @@
                 <span class="text-info-emp" id="ramo-emp">{{ ramo_atv }}</span>
             </fieldset>
         </div>
-        <div class="info-block-tree">
-            <fieldset class="info-emp-pag-tree", id="servicos-contrados">
+        <div class="info-block-five">
+            <fieldset class="info-emp-pag-five", id="servicos-contrados">
                 <legend class="legend-info">
                     Serviços Contratados
                 </legend>
@@ -71,13 +83,13 @@
                 {% endif %}
 
             </fieldset>
-            <fieldset class="info-emp-pag-tree", id="procuracoes">
+            <fieldset class="info-emp-pag-five", id="procuracoes">
                 <legend class="legend-info">
                     Procurações
                 </legend>
                 <span class="text-info-emp" id="procuracao-emp"></span>
             </fieldset>
-        </div>
+        </div> -->
     </div>
 </div>
 

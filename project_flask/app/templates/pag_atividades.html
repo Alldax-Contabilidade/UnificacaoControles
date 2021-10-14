@@ -1,0 +1,36 @@
+{% extends 'barra-lateral.html' %}
+
+{% block content %}
+
+<div class="pag-atividade">
+
+    <div class="title-pag-atividade">
+        <h3 id="title-atividade">Atividades Departamentos</h3><hr>
+    </div>
+
+    <div class="area-cards-deptos">
+        <div class="subarea-cards-deptos">
+            <ul class="list-menu-depart">
+                <li class="selection-dpto"><a class="dpto-select-btn" href="/departamentos/pessoal">
+                    <img class="img-depto" src="{{ url_for('static', filename='img/dpto_pessoal.jpg') }}">
+                    <p class="text-select-dpto">Departamento Pessoal</p></a></li>
+                <li class="selection-dpto"><a class="dpto-select-btn" href="/departamentos/fiscal">
+                    <img class="img-depto" src="{{ url_for('static', filename='img/dpto-fiscal.jpg') }}">
+                    <p class="text-select-dpto">Departamento Fiscal</p></a></li>
+                <li class="selection-dpto"><a class="dpto-select-btn" href="/departamentos/contabil">
+                    <img class="img-depto" src="{{ url_for('static', filename='img/dpto-contabil.png') }}">
+                    <p class="text-select-dpto">Departamento Contábil</p></a></li>
+
+            </ul>
+            
+        </div>
+    </div>
+
+
+</div>
+
+
+{% endblock %}
+{% block scripts %}
+
+{% endblock %}

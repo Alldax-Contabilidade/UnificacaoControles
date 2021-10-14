@@ -1,0 +1,136 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.selection-menu{
+    text-decoration: none;
+    color: white;
+}
+body{
+    font-family: sans-serif;
+}
+nav{
+    background-color: #1C1C1C;
+    width: 300px;
+    height: 100%;
+    left: -220px;
+    position: fixed;
+    transition: all .5s;
+}
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(220px);
+}
+input[type="checkbox"]:checked ~ .pag-inicial{
+    transform: translateX(108px);
+}
+.list-menu{
+    list-style: none;
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    padding: 20px;
+}
+label img{
+    position: absolute;
+    left: 0px;
+    width: 90px;
+
+}
+input[type="checkbox"]{
+    display: none;
+}
+
+.selection-menu{
+    display: block;
+    padding: 20px 5px;
+    border-radius: 10px;
+}
+.selection-menu:hover{
+    background-color: royalblue;
+    color: white;
+    text-decoration: none;
+}
+#label-menu{
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+#text-end{
+    position: absolute;
+    width: 300px;
+    bottom: 60px;
+    right: 0px;
+    color: white;
+}
+#zuar{
+    font-size: 12px;
+    padding: 10px;
+    position: absolute;
+    top: 3px;
+    right: 70px;
+}
+.pag-inicial{
+    /*background-color: red;*/
+    margin-left: 220px;
+    margin-right: 300px;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    transition: all .5s;
+}
+#banner-inicial{
+    /*background-color: blue;*/
+    height: 50%;
+    padding-top: 60px;
+
+}
+
+#titulo-index{
+    position: absolute;
+    color: lightgray;
+    font-size: 60px;
+    left: 12%;
+    top: 15%;
+    font-family: Stencil Std;
+
+}
+#img-home{
+    width: 100%;
+    opacity: 0.8;
+    height: 90%;
+}
+.valores-empresa{
+    /*background-color: red;*/
+    height: 340px;
+    font-family: Didot, serif;
+}
+#titulo-valores h3{
+    text-align: center;
+    border-bottom: 1px solid #000000;
+    border-width: 50%;  
+}
+#cultura{
+    /*background-color: blue;*/
+    height: 100%;
+    text-align: center;
+    padding-top: 40px;
+}
+.culturas{
+    padding: 20px;
+    background-color: #EAEBF2;
+    display: inline-block;
+    margin-right: 5%;
+    width: 350px;
+    height: 250px;
+    border-radius: 10%;
+}
+h4{
+    color: #8D6C05;
+    font-family: Optima, sans-serif;
+}
+.culturas p{
+    color: #676767;
+}
+#valores-cultura{
+    height: 350px;
+}

@@ -1,0 +1,30 @@
+{% extends 'barra-lateral.html' %}
+
+{% block content %}
+
+<div class="pag-atv-dpto">
+
+    <div class="title-pag-atv-dpto">
+        <h3 id="title-atividade-dpto">Departamento {{ title.capitalize() }}</h3><hr>
+    </div>
+    <form id="form-comp" action="{{ url_for('ativ_dpto', dpto=title) }}" method="POST">
+        <div class="part-competencia">
+            <h5>Referência</h5>
+            <select name="select-competencia" id="select-competencia">
+                <option value="09/2021">09/2021</option>
+                <option value="08/2021">08/2021</option>
+                <option value="07/2021">07/2021</option>
+
+            </select>
+            <button class="btn-default" type="submit">Ok</button>
+        </div>
+    </form>
+    <hr>
+
+</div>
+
+
+{% endblock %}
+{% block scripts %}
+
+{% endblock %}

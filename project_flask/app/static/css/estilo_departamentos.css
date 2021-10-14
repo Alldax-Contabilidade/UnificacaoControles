@@ -1,0 +1,49 @@
+.pag-departamentos{
+    /*background-color: red;*/
+    margin-left: 200px;
+    width: 80%;
+    height: 960px;
+}
+.header-depto{
+    /*background-color: blue;*/
+    height: 150px;
+}
+#header-depto-name{
+    color: #989696;
+    font-size: 60px;
+    padding: 40px;
+    font-family: Stencil Std;
+
+}
+.cards-list-dpto{
+    background-color: lightgray;
+}
+.list-depto{
+    list-style: none;
+    margin-left: 50px;
+}
+.select-depto{
+    margin-top: 20px;
+    display: inline-block;
+    height: 40px;
+}
+.dpto-select{
+    color: black;
+    padding: 20px;
+    transition: all 0.3s linear;
+}
+.dpto-select:hover,
+.dpto-select:focus{
+    background-color: gray;
+    color: lightgray;
+    text-decoration: none;
+}
+.dpto-select:active{
+    background-color: gray;
+}
+.escondido{
+    display: none;
+}
+.table-func-alldax{
+    margin-left: 50px;
+}

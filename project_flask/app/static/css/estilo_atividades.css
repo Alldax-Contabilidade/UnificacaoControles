@@ -1,0 +1,63 @@
+.pag-atividade{
+	/*background-color: red;*/
+	width: 80%;
+	height: 100%;
+	margin-left: 200px;
+	margin-right: 200px;
+	transition: all .5s;
+}
+input[type="checkbox"]:checked ~ .pag-atividade{
+    transform: translateX(130px);
+}
+.title-pag-atividade{
+	padding: 40px;
+	/*background-color: blue;*/
+	height: 100px;
+}
+#title-atividade{
+	color: #989696;
+    font-size: 60px;
+    font-family: Stencil Std;
+}
+.area-cards-deptos{
+    /*background-color: brown;*/
+    margin-top: 70px;
+    height: 700px;
+}
+.subarea-cards-deptos{
+    /*background-color: chartreuse;*/
+    height: 100%;
+    margin: 40px;
+    padding: 10% 0;
+}
+.list-menu-depart{
+    list-style: none;
+    /*margin: 0 40px;*/
+}
+.selection-dpto{
+    display: inline-block;
+    padding: 10px;
+    height: 300px;
+    width: 400px;
+    /*background-color: darkblue;*/
+    margin: 20px;
+}
+.img-depto{
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    border-radius: 10%;
+}
+.dpto-select-btn{
+    color: #606057;
+    transition: all 0.3s linear;
+}
+.dpto-select-btn:hover{
+    text-decoration: none;
+    color: lightgray;
+}
+.text-select-dpto{
+    font-size: 22px;
+    font-family: Stencil Std;
+    text-align: right;
+}

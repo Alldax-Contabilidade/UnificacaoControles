@@ -1,0 +1,463 @@
+{% extends 'barra-lateral.html' %}
+
+{% block content %}
+<div class="pag-departamentos">
+
+    <div class="header-depto">
+        <h3 id="header-depto-name">Departamentos</h3>
+    </div>
+
+    <div class="cards-list-dpto">
+        <ul class="list-depto" id="select-list-dpto">
+            <li class="select-depto"><a class="dpto-select" id="btn-adm" href="#" target="_self">Administrativo</a></li>
+            <li class="select-depto"><a class="dpto-select" id="btn-automacao" href="#">Automação</a></li>
+            <li class="select-depto"><a class="dpto-select" id="btn-consultoria" href="#">Consultoria</a></li>
+            <li class="select-depto"><a class="dpto-select" id="btn-contabil" href="#">Contábil</a></li>
+            <li class="select-depto"><a class="dpto-select" id="btn-controladoria" href="#">Controladoria</a></li>
+            <li class="select-depto"><a class="dpto-select" id="btn-financeiro" href="#">Financeiro</a></li>
+            <li class="select-depto"><a class="dpto-select" id="btn-fiscal" href="#">Fiscal</a></li>
+            <li class="select-depto"><a class="dpto-select" id="btn-pessoal" href="#">Pessoal</a></li>
+            <li class="select-depto"><a class="dpto-select" id="btn-recursos-humanos" href="#">Recursos Humanos</a></li>
+            <li class="select-depto"><a class="dpto-select" id="btn-relacionamento" href="#">Relacionamento</a></li>
+            <li class="select-depto"><a class="dpto-select" id="btn-societario" href="#">Societário</a></li>
+            
+        </ul>
+    </div>
+    <div id="quadro-info">
+
+        <div id="adm">
+            <table class="table-func-alldax" id="table-adm" style="width:100%">
+                <thead class="table-func-header">
+                    <th>NOME</th>
+                    <th>ADMISSÃO</th>
+                </thead>
+
+                <tbody>
+                    {% for codi_emp, i_func, nome_emp, admissao, i_dpto in administrativo %}
+                    <tr>
+                        <td>{{ nome_emp }}</td>
+                        <td>{{ admissao }}</td>
+
+                    </tr>
+                    {% endfor %}
+                </tbody>
+
+            </table>
+        </div>
+
+        <div id="automacao">
+            <table class="table-func-alldax" id="table-automacao" style="width:100%">
+                <thead class="table-func-header">
+                    <th>NOME</th>
+                    <th>ADMISSÃO</th>
+                </thead>
+
+                <tbody>
+                    {% for codi_emp, i_func, nome_emp, admissao, i_dpto in automacao %}
+                    <tr>
+                        <td>{{ nome_emp }}</td>
+                        <td>{{ admissao }}</td>
+
+                    </tr>
+                    {% endfor %}
+                </tbody>
+
+            </table>
+        </div>
+
+        <div id="consultoria">
+            <table class="table-func-alldax" id="table-consultoria" style="width:100%">
+                <thead class="table-func-header">
+                    <th>NOME</th>
+                    <th>ADMISSÃO</th>
+                </thead>
+
+                <tbody>
+                    {% for codi_emp, i_func, nome_emp, admissao, i_dpto in consultoria %}
+                    <tr>
+                        <td>{{ nome_emp }}</td>
+                        <td>{{ admissao }}</td>
+
+                    </tr>
+                    {% endfor %}
+                </tbody>
+
+            </table>
+        </div>
+
+        <div id="contabil">
+            <table class="table-func-alldax" id="table-contabil" style="width:100%">
+                <thead class="table-func-header">
+                    <th>NOME</th>
+                    <th>ADMISSÃO</th>
+                </thead>
+
+                <tbody>
+                    {% for codi_emp, i_func, nome_emp, admissao, i_dpto in contabil %}
+                    <tr>
+                        <td>{{ nome_emp }}</td>
+                        <td>{{ admissao }}</td>
+
+                    </tr>
+                    {% endfor %}
+                </tbody>
+
+            </table>
+        </div>
+
+        <div id="controladoria">
+            <table class="table-func-alldax" id="table-controladoria" style="width:100%">
+                <thead class="table-func-header">
+                    <th>NOME</th>
+                    <th>ADMISSÃO</th>
+                </thead>
+
+                <tbody>
+                    {% for codi_emp, i_func, nome_emp, admissao, i_dpto in controladoria %}
+                    <tr>
+                        <td>{{ nome_emp }}</td>
+                        <td>{{ admissao }}</td>
+
+                    </tr>
+                    {% endfor %}
+                </tbody>
+
+            </table>
+        </div>
+
+        <div id="financeiro">
+            <table class="table-func-alldax" id="table-financeiro" style="width:100%">
+                <thead class="table-func-header">
+                    <th>NOME</th>
+                    <th>ADMISSÃO</th>
+                </thead>
+
+                <tbody>
+                    {% for codi_emp, i_func, nome_emp, admissao, i_dpto in financeiro %}
+                    <tr>
+                        <td>{{ nome_emp }}</td>
+                        <td>{{ admissao }}</td>
+
+                    </tr>
+                    {% endfor %}
+                </tbody>
+
+            </table>
+        </div>
+
+        <div id="fiscal">
+            <table class="table-func-alldax" id="table-fiscal" style="width:100%">
+                <thead class="table-func-header">
+                    <th>NOME</th>
+                    <th>ADMISSÃO</th>
+                </thead>
+
+                <tbody>
+                    {% for codi_emp, i_func, nome_emp, admissao, i_dpto in fiscal %}
+                    <tr>
+                        <td>{{ nome_emp }}</td>
+                        <td>{{ admissao }}</td>
+
+                    </tr>
+                    {% endfor %}
+                </tbody>
+
+            </table>
+        </div>
+
+        <div id="pessoal">
+            <table class="table-func-alldax" id="table-pessoal" style="width:100%">
+                <thead class="table-func-header">
+                    <th>NOME</th>
+                    <th>ADMISSÃO</th>
+                </thead>
+
+                <tbody>
+                    {% for codi_emp, i_func, nome_emp, admissao, i_dpto in pessoal %}
+                    <tr>
+                        <td>{{ nome_emp }}</td>
+                        <td>{{ admissao }}</td>
+
+                    </tr>
+                    {% endfor %}
+                </tbody>
+
+            </table>
+        </div>
+
+        <div id="recursos-humanos">
+            <table class="table-func-alldax" id="table-recursos-humanos" style="width:100%">
+                <thead class="table-func-header">
+                    <th>NOME</th>
+                    <th>ADMISSÃO</th>
+                </thead>
+
+                <tbody>
+                    {% for codi_emp, i_func, nome_emp, admissao, i_dpto in rh %}
+                    <tr>
+                        <td>{{ nome_emp }}</td>
+                        <td>{{ admissao }}</td>
+
+                    </tr>
+                    {% endfor %}
+                </tbody>
+
+            </table>
+        </div>
+
+        <div id="relacionamento">
+            <table class="table-func-alldax" id="table-relacionamento" style="width:100%">
+                <thead class="table-func-header">
+                    <th>NOME</th>
+                    <th>ADMISSÃO</th>
+                </thead>
+
+                <tbody>
+                    {% for codi_emp, i_func, nome_emp, admissao, i_dpto in relacionamento %}
+                    <tr>
+                        <td>{{ nome_emp }}</td>
+                        <td>{{ admissao }}</td>
+
+                    </tr>
+                    {% endfor %}
+                </tbody>
+
+            </table>
+        </div>
+
+        <div id="societario">
+            <table class="table-func-alldax" id="table-societario" style="width:100%">
+                <thead class="table-func-header">
+                    <th>NOME</th>
+                    <th>ADMISSÃO</th>
+                </thead>
+
+                <tbody>
+                    {% for codi_emp, i_func, nome_emp, admissao, i_dpto in societario %}
+                    <tr>
+                        <td>{{ nome_emp }}</td>
+                        <td>{{ admissao }}</td>
+
+                    </tr>
+                    {% endfor %}
+                </tbody>
+
+            </table>
+        </div>
+
+
+    </div>
+
+</div>
+
+{% endblock %}
+{% block scripts %}
+    <script>
+        
+        var adm;
+        var automacao;
+        var consultoria;
+        var contabil;
+        var controladoria;
+        var financeiro;
+        var fiscal;
+        var pessoal;
+        var rh;
+        var relacionamento;
+        var societario;
+
+        window.onload = function(){
+            adm = document.getElementById("adm");
+            automacao = document.getElementById("automacao");
+            consultoria = document.getElementById("consultoria");
+            contabil = document.getElementById("contabil");
+            controladoria = document.getElementById("controladoria");
+            financeiro = document.getElementById("financeiro");
+            fiscal = document.getElementById("fiscal");
+            pessoal = document.getElementById("pessoal");
+            rh = document.getElementById("recursos-humanos");
+            relacionamento = document.getElementById("relacionamento");
+            societario = document.getElementById("societario");
+
+            var bt1 = document.getElementById("btn-adm");
+            bt1.onclick = monstrarDiv1;
+            var bt2 = document.getElementById("btn-automacao");
+            bt2.onclick = monstrarDiv2;
+            var bt3 = document.getElementById("btn-consultoria");
+            bt3.onclick = monstrarDiv3;
+            var bt4 = document.getElementById("btn-contabil");
+            bt4.onclick = monstrarDiv4;
+            var bt5 = document.getElementById("btn-controladoria");
+            bt5.onclick = monstrarDiv5;
+            var bt6 = document.getElementById("btn-financeiro");
+            bt6.onclick = monstrarDiv6;
+            var bt7 = document.getElementById("btn-fiscal");
+            bt7.onclick = monstrarDiv7;
+            var bt8 = document.getElementById("btn-pessoal");
+            bt8.onclick = monstrarDiv8;
+            var bt9 = document.getElementById("btn-recursos-humanos");
+            bt9.onclick = monstrarDiv9;
+            var bt10 = document.getElementById("btn-relacionamento");
+            bt10.onclick = monstrarDiv10;
+            var bt11 = document.getElementById("btn-societario");
+            bt11.onclick = monstrarDiv11;
+
+            adm.classList.add("escondido");
+            automacao.classList.add("escondido");
+            consultoria.classList.add("escondido");
+            contabil.classList.add("escondido");
+            controladoria.classList.add("escondido");
+            financeiro.classList.add("escondido");
+            fiscal.classList.add("escondido");
+            pessoal.classList.add("escondido");
+            rh.classList.add("escondido");
+            relacionamento.classList.add("escondido");
+            societario.classList.add("escondido");
+        };
+
+        function monstrarDiv1(){
+            adm.classList.remove("escondido");
+            automacao.classList.add("escondido");
+            consultoria.classList.add("escondido");
+            contabil.classList.add("escondido");
+            controladoria.classList.add("escondido");
+            financeiro.classList.add("escondido");
+            fiscal.classList.add("escondido");
+            pessoal.classList.add("escondido");
+            rh.classList.add("escondido");
+            relacionamento.classList.add("escondido");
+            societario.classList.add("escondido");
+        };
+        function monstrarDiv2(){
+            adm.classList.add("escondido");
+            automacao.classList.remove("escondido");
+            consultoria.classList.add("escondido");
+            contabil.classList.add("escondido");
+            controladoria.classList.add("escondido");
+            financeiro.classList.add("escondido");
+            fiscal.classList.add("escondido");
+            pessoal.classList.add("escondido");
+            rh.classList.add("escondido");
+            relacionamento.classList.add("escondido");
+            societario.classList.add("escondido");
+        };
+        function monstrarDiv3(){
+            adm.classList.add("escondido");
+            automacao.classList.add("escondido");
+            consultoria.classList.remove("escondido");
+            contabil.classList.add("escondido");
+            controladoria.classList.add("escondido");
+            financeiro.classList.add("escondido");
+            fiscal.classList.add("escondido");
+            pessoal.classList.add("escondido");
+            rh.classList.add("escondido");
+            relacionamento.classList.add("escondido");
+            societario.classList.add("escondido");
+        };
+        function monstrarDiv4(){
+            adm.classList.add("escondido");
+            automacao.classList.add("escondido");
+            consultoria.classList.add("escondido");
+            contabil.classList.remove("escondido");
+            controladoria.classList.add("escondido");
+            financeiro.classList.add("escondido");
+            fiscal.classList.add("escondido");
+            pessoal.classList.add("escondido");
+            rh.classList.add("escondido");
+            relacionamento.classList.add("escondido");
+            societario.classList.add("escondido");
+        };
+        function monstrarDiv5(){
+            adm.classList.add("escondido");
+            automacao.classList.add("escondido");
+            consultoria.classList.add("escondido");
+            contabil.classList.add("escondido");
+            controladoria.classList.remove("escondido");
+            financeiro.classList.add("escondido");
+            fiscal.classList.add("escondido");
+            pessoal.classList.add("escondido");
+            rh.classList.add("escondido");
+            relacionamento.classList.add("escondido");
+            societario.classList.add("escondido");
+        };
+        function monstrarDiv6(){
+            adm.classList.add("escondido");
+            automacao.classList.add("escondido");
+            consultoria.classList.add("escondido");
+            contabil.classList.add("escondido");
+            controladoria.classList.add("escondido");
+            financeiro.classList.remove("escondido");
+            fiscal.classList.add("escondido");
+            pessoal.classList.add("escondido");
+            rh.classList.add("escondido");
+            relacionamento.classList.add("escondido");
+            societario.classList.add("escondido");
+        };
+        function monstrarDiv7(){
+            adm.classList.add("escondido");
+            automacao.classList.add("escondido");
+            consultoria.classList.add("escondido");
+            contabil.classList.add("escondido");
+            controladoria.classList.add("escondido");
+            financeiro.classList.add("escondido");
+            fiscal.classList.remove("escondido");
+            pessoal.classList.add("escondido");
+            rh.classList.add("escondido");
+            relacionamento.classList.add("escondido");
+            societario.classList.add("escondido");
+        };
+        function monstrarDiv8(){
+            adm.classList.add("escondido");
+            automacao.classList.add("escondido");
+            consultoria.classList.add("escondido");
+            contabil.classList.add("escondido");
+            controladoria.classList.add("escondido");
+            financeiro.classList.add("escondido");
+            fiscal.classList.add("escondido");
+            pessoal.classList.remove("escondido");
+            rh.classList.add("escondido");
+            relacionamento.classList.add("escondido");
+            societario.classList.add("escondido");
+        };
+        function monstrarDiv9(){
+            adm.classList.add("escondido");
+            automacao.classList.add("escondido");
+            consultoria.classList.add("escondido");
+            contabil.classList.add("escondido");
+            controladoria.classList.add("escondido");
+            financeiro.classList.add("escondido");
+            fiscal.classList.add("escondido");
+            pessoal.classList.add("escondido");
+            rh.classList.remove("escondido");
+            relacionamento.classList.add("escondido");
+            societario.classList.add("escondido");
+        };
+        function monstrarDiv10(){
+            adm.classList.add("escondido");
+            automacao.classList.add("escondido");
+            consultoria.classList.add("escondido");
+            contabil.classList.add("escondido");
+            controladoria.classList.add("escondido");
+            financeiro.classList.add("escondido");
+            fiscal.classList.add("escondido");
+            pessoal.classList.add("escondido");
+            rh.classList.add("escondido");
+            relacionamento.classList.remove("escondido");
+            societario.classList.add("escondido");
+        };
+        function monstrarDiv11(){
+            adm.classList.add("escondido");
+            automacao.classList.add("escondido");
+            consultoria.classList.add("escondido");
+            contabil.classList.add("escondido");
+            controladoria.classList.add("escondido");
+            financeiro.classList.add("escondido");
+            fiscal.classList.add("escondido");
+            pessoal.classList.add("escondido");
+            rh.classList.add("escondido");
+            relacionamento.classList.add("escondido");
+            societario.classList.remove("escondido");
+        };
+    
+    </script>
+{% endblock %}

@@ -1,0 +1,45 @@
+.pag-atv-dpto{
+	/*background-color: red;*/
+	width: 80%;
+	height: 100%;
+	margin-left: 200px;
+	margin-right: 200px;
+	transition: all .5s;
+}
+input[type="checkbox"]:checked ~ .pag-atv-dpto{
+    transform: translateX(130px);
+}
+.title-pag-atv-dpto{
+	padding: 40px;
+	/*background-color: blue;*/
+	height: 100px;
+}
+#title-atividade-dpto{
+	color: #989696;
+    font-size: 60px;
+    font-family: Stencil Std;
+}
+.part-competencia{
+    /* background: red; */
+    text-align: right;
+}
+.btn-default{
+    background-color: gray; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  #select-competencia{
+      width: 150px;
+      height: 50px;
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .part-competencia h5{
+      /* background: blue; */
+      margin-right: 100px;
+  }

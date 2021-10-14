@@ -1,0 +1,38 @@
+{% extends 'barra-lateral.html' %}
+
+{% block content %}
+<div class="pag-inicial">
+            <div id="banner-inicial">
+                <img id="img-home" src="{{ url_for('static', filename='img/home.jpg') }}">
+                <h1 id="titulo-index">Controle Clientes</h1>
+
+            </div>
+            <div class="valores-empresa">
+                <div id="titulo-valores">
+                    <h3 id="valores-title">PARA NÃO ESQUECER</h3>
+                </div>
+                <div id="cultura">
+                    <div class="culturas" id="visao-cultura">
+                        <h4>VISÃO</h4><hr>
+                        <p>Tornar-se, até 2022, uma referência em consultoria contábil em Lucro Real no Distrito Federal e região, reconhecido como uma das melhores empresas contábeis para formação profissional.</p>
+                    </div>
+                    <div class="culturas" id="valores-cultura">
+                        <h4 >VALORES</h4><hr>
+                        <p>Relacionamento com Cliente</p>
+                        <p>Zelo</p>
+                        <p>Confiabilidade</p>
+                        <p>Overdelivery</p>
+                        <p>Espírito de Equipe</p>
+                        <p>Comprometimento</p>
+
+                    </div>
+                    <div class="culturas" id="missao-valores">
+                        <h4>MISSÃO</h4><hr>
+                        <br><p>Participar do sucesso e crescimento de nossos clientes, encontrar soluções e construir relações duradouras.</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+{% endblock %}

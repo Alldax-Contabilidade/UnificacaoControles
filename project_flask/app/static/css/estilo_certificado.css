@@ -1,0 +1,25 @@
+.pag-certificado{
+	/*background-color: red;*/
+	width: 80%;
+	height: 100%;
+	margin-left: 200px;
+	margin-right: 200px;
+	transition: all .5s;
+}
+input[type="checkbox"]:checked ~ .pag-certificado{
+    transform: translateX(130px);
+}
+.title-pag-certificado{
+	padding: 40px;
+	/*background-color: blue;*/
+	height: 100px;
+}
+#title-certificado{
+	color: #989696;
+    font-size: 60px;
+    font-family: Stencil Std;
+}
+.table-certificado{
+	margin-top: 60px;
+	width: 100%;
+}

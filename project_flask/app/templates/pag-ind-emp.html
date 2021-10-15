@@ -3,93 +3,101 @@
 {% block content %}
 <div class="pagina-ind-empresa">
     <div class="titulo-emp">
-        <h3 id="header-emp">{{ cod_emp }} | {{ nome_emp}} | {{ cnpj_emp }}</h3><hr>
+        <h3 id="header-emp">{{ cod_emp }} | {{ nome_emp}} | <br>{{ cnpj_emp }}</br></h3><hr>
     </div>
     <div class="informacao-empresa">
-        <div class="info-block-tree">
-            <fieldset class="info-emp-pag-tree" id="Responsaveis">
+        <div class="info-block-one">
+            <fieldset class="info-emp-pag-one" id="Responsaveis">
                 <legend class="legend-info">
                     Responsaveis
                 </legend>
-                <span class="text-info-emp-tree" id="Responsaval Contabil"> Contabil: <p>bruno fellip{{ pessoa_contabil }}</p></span>
-                <span class="text-info-emp-tree" id="Responsaval Fiscal"> Fiscal: <p>bruno fellip{{ pessoa_fiscal }}</p></span>
-                <span class="text-info-emp-tree" id="Responsaval Pessoal"> Pessoal:  <p>bruno fellip{{ pessoa_pessoal }}</p></span>
-            </fieldset>
-        </div>
-        <div class="info-block-one">
-            <fieldset class="info-emp-pag-one">
+                <span class="text-info-emp-one" id="Responsaval-Contabil"> Contabil: <p>bruno fellip{{ pessoa_contabil }}</p></span>
+                <span class="text-info-emp-one" id="Responsaval-Fiscal"> Fiscal: <p>bruno fellip{{ pessoa_fiscal }}</p></span>
+                <span class="text-info-emp-one" id="Responsaval-Pessoal"> Pessoal:  <p>bruno fellip{{ pessoa_pessoal }}</p></span>
+             </fieldset>
+             </div>
+        <div class="info-block-two">
+            <fieldset id="info-emp-pag-two">
                 <legend class="legend-info">
                     Situação
                 </legend>
                 {% if status == 'A' %} 
-                <span class="text-info-emp-one" id="situcao">Ativo</span>
+                <span class="text-info-emp-two" id="situcao">Ativo</span>
                 {% elif status == 'B' %}
-                <span class="text-info-emp-one" id="situcao">Em Processo de Baixa</span>
+                <span class="text-info-emp-two" id="situcao">Em Processo de Baixa</span>
                 {% else %}
-                <span class="text-info-emp-one" id="situcao">Inativo</span>
+                <span class="text-info-emp-two" id="situcao">Inativo</span>
                 {% endif %}
             </fieldset>
-            <fieldset class="info-emp-pag" id="data-entrada">
+        </div>
+        <div class="info-block-tree">
+            <fieldset class="info-emp-pag-tree" id="data-entrada">
                 <legend class="legend-info">
                     Cliente Desde
                 </legend>
-                <span class="text-info-emp" id="text-data-entrada">{{ ini_date }}</span>
+                <span class="text-info-emp-tree" id="text-data-entrada">{{ ini_date }}</span>
             </fieldset>
-        </div>
-         <!-- <div class="info-block-two">
-            <fieldset class="info-emp-pag" id="data-saida">
+        
+        <div class="info-block-four">
+        <fieldset class="info-emp-pag-four" id="data-saida">
                 <legend class="legend-info">
                     Data Saída
                 </legend>
-                <span class="text-info-emp" id="text-data-entrada">{{ fim_date }}</span>
+                <span class="text-info-emp-four" id="text-data-entrada">{{ fim_date }}</span>
             </fieldset>
+        </div> 
+        <div class="info-block-five">
+            <fieldset class="info-emp-pag-five", id="servicos-contrados">
+            <legend class="legend-info">
+                Serviços Contratados
+            </legend>
+            {% if contabil == 1 %}
+            <span class="text-info-emp-five" id="ramo-emp">Contábil: &#9989;</span>
+            {% else %}
+            <span class="text-info-emp-five" id="ramo-emp">Contábil: &#10060;</span>
+            {% endif %}
 
-            <fieldset class="info-emp-pag" id="info-regime-trib">
-                <legend class="legend-info">
-                    Regime Tributário
-                </legend>
-                <span class="text-info-emp" id="regime-tributario">{{ regi_trib }}</span>
+            {% if fiscal == 1 %}
+            <span class="text-info-emp-five" id="ramo-emp">Fiscal: &#9989;</span>
+            {% else %}
+            <span class="text-info-emp-five" id="ramo-emp">Fiscal: &#10060;</span>
+            {% endif %}
+            
+            {% if folha == 1 %}
+            <span class="text-info-emp-five" id="ramo-emp">Folha: &#9989;</span>
+            {% else %}
+            <span class="text-info-emp-five" id="ramo-emp">Folha: &#10060;</span>
+            {% endif %}
             </fieldset>
         </div>
-        <div class="info-block-four">
-            <fieldset class="info-emp-pag-two">
+         
+        <div class="info-block-six">
+            <fieldset class="info-emp-pag-six">
                 <legend class="legend-info">
                     Ramo Atividade
                 </legend>
-                <span class="text-info-emp" id="ramo-emp">{{ ramo_atv }}</span>
+                <span class="text-info-emp-six" id="ramo-emp">{{ ramo_atv }}</span>
             </fieldset>
         </div>
-        <div class="info-block-five">
-            <fieldset class="info-emp-pag-five", id="servicos-contrados">
-                <legend class="legend-info">
-                    Serviços Contratados
-                </legend>
-                {% if contabil == 1 %}
-                <span class="text-info-emp" id="ramo-emp">Contábil: &#9989;</span>
-                {% else %}
-                <span class="text-info-emp" id="ramo-emp">Contábil: &#10060;</span>
-                {% endif %}
-
-                {% if fiscal == 1 %}
-                <span class="text-info-emp" id="ramo-emp">Fiscal: &#9989;</span>
-                {% else %}
-                <span class="text-info-emp" id="ramo-emp">Fiscal: &#10060;</span>
-                {% endif %}
-                
-                {% if folha == 1 %}
-                <span class="text-info-emp" id="ramo-emp">Folha: &#9989;</span>
-                {% else %}
-                <span class="text-info-emp" id="ramo-emp">Folha: &#10060;</span>
-                {% endif %}
-
-            </fieldset>
-            <fieldset class="info-emp-pag-five", id="procuracoes">
+        <div class="info-block-seven"> 
+            <fieldset class="info-emp-pag-seven", id="procuracoes">
                 <legend class="legend-info">
                     Procurações
                 </legend>
-                <span class="text-info-emp" id="procuracao-emp"></span>
+                <span class="text-info-emp-seven" id="procuracao-emp"></span>
             </fieldset>
-        </div> -->
+        </div>
+         <div class="info-block-eight">
+            <fieldset class="info-emp-pag-eight" id="info-regime-trib">
+                 <legend class="legend-info">
+                    Regime Tributário
+                </legend>
+                <span class="text-info-emp-eight" id="regime-tributario">{{ regi_trib }}</span>
+
+
+                
+            </fieldset>
+        </div>
     </div>
 </div>
 

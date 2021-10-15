@@ -22,11 +22,11 @@
                     Situação
                 </legend>
                 {% if status == 'A' %} 
-                <span class="text-info-emp" id="situcao">Ativo</span>
+                <span class="text-info-emp-one" id="situcao">Ativo</span>
                 {% elif status == 'B' %}
-                <span class="text-info-emp" id="situcao">Em Processo de Baixa</span>
+                <span class="text-info-emp-one" id="situcao">Em Processo de Baixa</span>
                 {% else %}
-                <span class="text-info-emp" id="situcao">Inativo</span>
+                <span class="text-info-emp-one" id="situcao">Inativo</span>
                 {% endif %}
             </fieldset>
             <fieldset class="info-emp-pag" id="data-entrada">
@@ -36,7 +36,7 @@
                 <span class="text-info-emp" id="text-data-entrada">{{ ini_date }}</span>
             </fieldset>
         </div>
-         <!--<div class="info-block-two">
+         <!-- <div class="info-block-two">
             <fieldset class="info-emp-pag" id="data-saida">
                 <legend class="legend-info">
                     Data Saída

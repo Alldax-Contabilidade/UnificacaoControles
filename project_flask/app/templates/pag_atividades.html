@@ -1,36 +1,83 @@
 {% extends 'barra-lateral.html' %}
 
 {% block content %}
-
-<div class="pag-atividade">
-
-    <div class="title-pag-atividade">
-        <h3 id="title-atividade">Atividades Departamentos</h3><hr>
+<div class="pag-Acompanhamento">
+    <div class="title-pag">
+        <h3 id="title-pag-top">ACOMPANHAMENTO</h3><hr>
     </div>
+    <div class="table-test" style="width:100%">
+     <table id="table-emp" class="table table-striped table-bordered" style="width:100%">
+        
+        <thead class="table__header">
+        
+            <th class="table__cell">DATA</th>
+            <th class="table__cell">CÓDIGO DOMÍNIO</th>
+            <th class="table__cell">RAZÃO</th>
+            <th class="table__cell">CNPJ</th>
+            <th class="table__cell">DEPARTAMENTO</th>
+            <th class="table__cell">RESPONSAVEL</th>
+            <th class="table__cell">STATUS</th>
+            <th class="table__cell">DESCRIÇÃO</th>
 
-    <div class="area-cards-deptos">
-        <div class="subarea-cards-deptos">
-            <ul class="list-menu-depart">
-                <li class="selection-dpto"><a class="dpto-select-btn" href="/departamentos/pessoal">
-                    <img class="img-depto" src="{{ url_for('static', filename='img/dpto_pessoal.jpg') }}">
-                    <p class="text-select-dpto">Departamento Pessoal</p></a></li>
-                <li class="selection-dpto"><a class="dpto-select-btn" href="/departamentos/fiscal">
-                    <img class="img-depto" src="{{ url_for('static', filename='img/dpto-fiscal.jpg') }}">
-                    <p class="text-select-dpto">Departamento Fiscal</p></a></li>
-                <li class="selection-dpto"><a class="dpto-select-btn" href="/departamentos/contabil">
-                    <img class="img-depto" src="{{ url_for('static', filename='img/dpto-contabil.png') }}">
-                    <p class="text-select-dpto">Departamento Contábil</p></a></li>
 
-            </ul>
-            
-        </div>
+
+        </thead>
+        
+        <tbody>
+
+            <tr class="table__row">
+                  
+                <td class="table__cell"><a id="selection-emp" target="_blank" href=# style="text-decoration: none">07/08/2021</a></td>
+                <td class="table__cell"><a id="selection-emp" target="_blank" href=# style="text-decoration: none">5656465456</a></td>
+                <td class="table__cell"><a id="selection-emp" target="_blank" href=# style="text-decoration: none">JT Metais</a></td>
+                <td class="table__cell"><a id="selection-emp" target="_blank" href=# style="text-decoration: none">21651651</a></td>
+                <td class="table__cell"><a id="selection-emp" target="_blank" href=# style="text-decoration: none">Contabil</a></td>
+                <td class="table__cell"><a id="selection-emp" target="_blank" href=# style="text-decoration: none">julio</a></td>
+                <td class="table__cell"><a id="selection-emp" target="_blank" href=# style="text-decoration: none">Concluido</a></td>
+                <td class="table__cell"><a id="selection-emp" target="_blank" href=# style="text-decoration: none">Etrega de Documentos</a></td>
+                
+            </tr>
+   
+
+        </tbody>
+        
+        </table>
     </div>
-
-
 </div>
-
-
 {% endblock %}
 {% block scripts %}
-
+    <script>
+        $(document).ready(function() {
+        $('#table-emp').DataTable({
+            responsive: true,
+            // "bSort": false,
+            "aaSorting": [[3, "asc"], [0, "asc"]],
+            "pageLength": 10,
+            "language": {
+                "decimal": "",
+                "emptyTable": "Sem dados disponíveis",
+                "info": "Mostrando de _START_ até _END_ de _TOTAL_ registos",
+                "infoEmpty": "Mostrando de 0 até 0 de 0 registos",
+                "infoFiltered": "(filtrado de _MAX_ registos no total)",
+                "infoPostFix": "",
+                "thousands": ",",
+                "lengthMenu": "Mostrar _MENU_ registos",
+                "loadingRecords": "A carregar dados...",
+                "processing": "A processar...",
+                "search": "Procurar:",
+                "zeroRecords": "Não foram encontrados resultados",
+                "paginate": {
+                    "first": "Primeiro",
+                    "last": "Último",
+                    "next": "Seguinte",
+                    "previous": "Anterior"
+                },
+                "aria": {
+                    "sortAscending": ": ordem crescente",
+                    "sortDescending": ": ordem decrescente"
+                }
+            }
+        });
+        } );
+    </script>
 {% endblock %}

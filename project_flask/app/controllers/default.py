@@ -78,3 +78,4 @@ def ativ_dpto(dpto):
         print(competencia)
 
     return render_template("pag_atv_dpto.html", title=dpto)
+

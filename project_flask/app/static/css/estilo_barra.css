@@ -3,6 +3,7 @@
     margin: auto;
 
 }
+
 .selection-menu{
     text-decoration: none;
     color: white;
@@ -60,11 +61,34 @@ input[type="checkbox"]:checked ~ .pag-inicial{
 
     text-decoration:double;
 }
+.Register{
+    list-style: none;
+    position: absolute;
+    top: 215px;
+    left: 890px;
+    background-color:#0003aa;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+.Register:hover{
+    background-color: rgb(255, 255, 255);
+
+    text-decoration:double;
+}
 .entrar{
-    font-size: 20px;
+    font-size: 15px;
     color:#ffffff;
 }
 .entrar:hover{
+    color: #0003aa;
+    text-decoration:double;
+}
+.registrar{
+    font-size: 15px;
+    color:#ffffff;
+}
+.registrar:hover{
     color: #0003aa;
     text-decoration:double;
 }
@@ -176,13 +200,13 @@ input[type="checkbox"]{
 }
 .valores-empresa{
     /*background-color: red;*/
-    height: 340px;
+    height: 300px;
     font-family: Didot, serif;
 }
 #titulo-valores h3{
     text-align: center;
     border-bottom: 1px solid #000000;
-    border-width: 50%;  
+    border-width: 40%;  
 }
 #cultura{
     /* background-color: blue; */
@@ -198,9 +222,9 @@ input[type="checkbox"]{
     padding: 20px;
     background-color: #EAEBF2;
     display: inline-block;
-    margin-right: 30;
-    margin-top: 20;
-    margin-bottom: 20;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 350px;
     height: 250px;
     border-radius: 10%;
@@ -213,7 +237,7 @@ h4{
     color: #676767;
 }
 #valores-cultura{
-    height: 247px;
+    height: 224px;
 }
 #visao-cultura{
     height: 272px;

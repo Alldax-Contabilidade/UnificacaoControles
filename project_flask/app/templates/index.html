@@ -1,12 +1,14 @@
 {% extends 'barra-lateral.html' %}
 
 {% block content %}
-<div class="pag-inicial">
+<div class="container"></div>
+        <div class="pag-inicial">
                 <div id="banner-inicial">
+            
                     <img id="img-home" src="{{ url_for('static', filename='img/home.jpg') }}">
                 <h1 id="titulo-index">Controle Clientes</h1>
                 
- <div class="login">
+  <div class="login">
             <input type="text" name="Nome" size="20" placeholder="Login"
                 value="" required>
 
@@ -23,6 +25,14 @@
                         </svg>
                     Entrar</a></li>
                 </ul>
+                <ul class="Register">
+                    <li><a class="registrar" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0v-2z"/>
+                            <path fill-rule="evenodd" d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+                          </svg>
+                Resgistrar</a></li>
+            </ul>
                 </div>
             <div class="valores-empresa" >
                 <div id="titulo-valores">
@@ -35,7 +45,7 @@
                     </div>
                     <div class="culturas" id="valores-cultura">
                         <h4 >VALORES</h4><hr>
-                        <p>Relacionamento com Cliente<br>Zelo<br>Confiabilidade<br>Overdelivery<br>Overdelivery<br>Comprometimento</p>
+                        <p>Relacionamento com Cliente<br>Zelo<br>Confiabilidade<br>Overdelivery<br>Comprometimento</p>
                 
                     </div>
                     <div class="culturas" id="missao-valores" >
@@ -47,5 +57,8 @@
 
                 </div>
             </div>
-        </div>
+        </div>[
+
+    
+</div>
 {% endblock %}

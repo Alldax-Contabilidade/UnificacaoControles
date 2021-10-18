@@ -29,11 +29,44 @@ input[type="checkbox"]:checked ~ .pag-inicial{
     transform: translateX(108px);
 }
 .login{
+    user-select: auto;
     display: line;
     position: absolute;
-    top: 220px;
-    left: 300px;
+    top: 140px;
+    left: 890px;
 
+}
+.senha{
+    user-select: auto;
+    display: line;
+    position: absolute;
+    top: 180px;
+    left: 890px;
+    
+
+}
+.join{
+    list-style: none;
+    position: absolute;
+    top: 215px;
+    left: 995px;
+    background-color:#0003aa;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+}
+.join:hover{
+    background-color: rgb(255, 255, 255);
+
+    text-decoration:double;
+}
+.entrar{
+    font-size: 20px;
+    color:#ffffff;
+}
+.entrar:hover{
+    color: #0003aa;
+    text-decoration:double;
 }
 .list-menu{
     list-style: none;
@@ -112,10 +145,10 @@ input[type="checkbox"]{
 }
 .pag-inicial{
     /*background-color: red;*/
-    margin-left: 220px;
-    margin-right: 300px;
+    margin-left: 12.5%;
+    margin-right: 10px;
     position: absolute;
-    width: 80%;
+    width: 85%;
     height: 100%;
     transition: all .5s;
 }
@@ -127,9 +160,9 @@ input[type="checkbox"]{
 }
 
 #titulo-index{
-    position: absolute;
-    color: lightgray;
-    font-size: 60px;
+    position:absolute;
+    color: #ebb514;
+    font-size: 100px;
     left: 12%;
     top: 15%;
     font-family: Stencil Std;

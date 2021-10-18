@@ -33,6 +33,7 @@ input[type="checkbox"]:checked ~ .pag-inicial{
     position: absolute;
     top: 220px;
     left: 300px;
+
 }
 .list-menu{
     list-style: none;

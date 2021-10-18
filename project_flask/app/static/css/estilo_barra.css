@@ -28,6 +28,12 @@ input[type="checkbox"]:checked ~ nav{
 input[type="checkbox"]:checked ~ .pag-inicial{
     transform: translateX(108px);
 }
+.login{
+    display: line;
+    position: absolute;
+    top: 220px;
+    left: 300px;
+}
 .list-menu{
     list-style: none;
     position: absolute;

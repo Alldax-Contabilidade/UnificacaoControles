@@ -1,1 +1,0 @@
-web: gunicorn bproject.wsgi --log-file -

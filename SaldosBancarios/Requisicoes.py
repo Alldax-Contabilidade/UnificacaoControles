@@ -10,4 +10,5 @@ class Query:
         request = requests.post(url= url, data= json, headers= headers)
         print(request.content)
 
+# TESTE
 Query().requsicao_base()
